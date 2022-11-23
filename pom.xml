@@ -25,45 +25,9 @@
             <artifactId>math-system</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>system</scope>
-            <type>jar</type>
-            <systemPath>${project.basedir}/src/main/resources/math-system-1_0-SNAPSHOT.jar</systemPath>
+            <!--            вот тут в systemPath указываете путь к скачанному jar-->
+            <systemPath>C:\Users\golub\Downloads\graph-lib.jar</systemPath>
         </dependency>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-            <version>${assertj.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>${mokito.version}</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${apache.maven.compiler.plugin.version}</version>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.source}</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
